@@ -14,3 +14,8 @@ var x = setInterval(function(){
     document.getElementById("countdown").innerHTML = "It's time for the Grammy's!";
   }
 }, 1000);
+
+//form quizOne
+var quizContainer=document.getElementById('quiz');
+var submitBut=document.getElementById('submit');
+var resultsContainer=document.getElementById('results');
