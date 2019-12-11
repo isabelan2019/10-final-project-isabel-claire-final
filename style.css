@@ -1,7 +1,7 @@
 body{
   background-color: #FF9400;
 }
-
+/*nav bar*/
 #main-nav{
   position:fixed;
   top:0px;
@@ -35,7 +35,23 @@ body{
   font-family: Copperplate, fantasy;
   font-weight: lighter;
 }
-
+button{
+  border: 2px solid #932192;
+  font-size: 20px;
+  color: #932192;
+  height: 60px;
+  width: 200px;
+  font-family: Copperplate, fantasy;
+  font-weight: lighter;
+  background-color: #FF9400 ;
+  margin-bottom: 10px;
+}
+button:hover{
+  background-color: #932192;
+  border-color: white;
+  color: white;
+}
+/*main page*/
 
 /*ABOUT PAGE -- gold: #a28848 */
 #about {
