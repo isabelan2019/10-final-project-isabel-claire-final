@@ -49,6 +49,16 @@ body{
   background-image:url('grammy-main.png');
   background-repeat: none;
   background-size: cover;
+  padding:10px;
+}
+#main-container p{
+  text-align:center;
+  font-size:60px;
+  margin:0px;
+  margin-top:10px;
+}
+#title{
+  font-weight:bolder;
 }
 button{
   border: 2px solid #932192;

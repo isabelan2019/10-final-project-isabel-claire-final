@@ -8,7 +8,7 @@ var x = setInterval(function(){
   var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((difference % (1000 * 60)) / 1000);
   document.getElementById("countdown").innerHTML = days + " Days " + hours + " Hrs "
-  + minutes + " Min " + seconds + " Secs ";
+  + minutes + " Min " + seconds + " S ";
   if (difference < 0) {
     clearInterval(x);
     document.getElementById("countdown").innerHTML = "It's time for the Grammy's!";
