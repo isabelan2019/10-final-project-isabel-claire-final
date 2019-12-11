@@ -9,4 +9,13 @@ var x = setInterval(function(){
   var seconds = Math.floor((difference % (1000 * 60)) / 1000);
   document.getElementById("countdown").innerHTML = days + " Days " + hours + " Hrs "
   + minutes + " Min " + seconds + " Secs ";
+  if (difference < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "It's time for the Grammy's!";
+  }
 }, 1000);
+
+//form quizOne
+var quizContainer=document.getElementById('quiz');
+var submitBut=document.getElementById('submit');
+var resultsContainer=document.getElementById('results');
