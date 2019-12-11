@@ -31,5 +31,42 @@ body{
 }
 
 .containerOne{
-  margin-top:100px;
+  margin-top:115px;
+  font-family: Copperplate, fantasy;
+  font-weight: lighter;
+}
+
+
+/*ABOUT PAGE -- gold: #a28848 */
+#about {
+
+}
+.about {
+  color: #932192;
+  text-align: center;
+}
+#linkOut [type="button"] {
+  border: 2px solid #932192;
+  font-size: 20px;
+  color: #932192;
+  height: 60px;
+  width: 200px;
+  font-family: Copperplate, fantasy;
+  font-weight: lighter;
+  background-color: #FF9400 ;
+  margin-bottom: 10px;
+}
+#linkOut [type="button"]:hover{
+  background-color: #932192;
+  border-color: white;
+  color: white;
+}
+#grammyVoting {
+  width: 50%;
+}
+
+/*NOMINATIONS PAGE -- gold: #a28848 */
+#nomTitle {
+  color: rgba(250,250,250,0.9);
+  text-align: center;
 }
