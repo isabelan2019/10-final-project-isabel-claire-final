@@ -1,4 +1,4 @@
-//countdown timer
+//countdown timer based of w3
 var finalDate=new Date("Jan 26, 2020 17:00:00").getTime();
 var x = setInterval(function(){
   var todayDate=new Date().getTime();
