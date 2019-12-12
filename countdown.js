@@ -7,15 +7,9 @@ var x = setInterval(function(){
   var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((difference % (1000 * 60)) / 1000);
-  document.getElementById("countdown").innerHTML = days + " Days " + hours + " Hrs "
-  + minutes + " Min " + seconds + " S ";
+  document.getElementById("countdown").innerHTML = days + " Days " + hours + " Hrs "+ minutes + " Min " + seconds + " S ";
   if (difference < 0) {
     clearInterval(x);
     document.getElementById("countdown").innerHTML = "It's time for the Grammy's!";
   }
 }, 1000);
-
-//form quizOne
-var quizContainer=document.getElementById('quiz');
-var submitBut=document.getElementById('submit');
-var resultsContainer=document.getElementById('results');
