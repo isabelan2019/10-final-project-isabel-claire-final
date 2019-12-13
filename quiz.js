@@ -31,10 +31,10 @@ var myQuestions=[
   {
     question: "Who holds the record for most Grammys won?",
     answers: {
-      a:"Stevie Wonder",
-      b:"Beyonce",
-      c:"Quincy Jones",
-      d:"George Solti"
+      a:" Stevie Wonder",
+      b:" Beyonce",
+      c:" Quincy Jones",
+      d:" George Solti"
     },
     correctAnswer:"d"
   },
@@ -51,10 +51,10 @@ var myQuestions=[
   {
     question: "Which male holds the record for winning the most Grammys in one night?",
     answers: {
-      a:"Eric Clapton",
-      b:"Quincy Jones",
-      c:"Michael Jackson",
-      d:"Bruno Mars"
+      a:" Eric Clapton",
+      b:" Quincy Jones",
+      c:" Michael Jackson",
+      d:" Bruno Mars"
     },
     correctAnswer:"c"
   },
@@ -71,10 +71,10 @@ var myQuestions=[
   {
     question: "Who had the most amount of nominations at the 61st Annual Grammy Awards?",
     answers: {
-      a:"Kendrick Lamar",
-      b:"Childish Gambino",
-      c:"Kanye West",
-      d:"Kacey Musgraves"
+      a:" Kendrick Lamar",
+      b:" Childish Gambino",
+      c:" Kanye West",
+      d:" Kacey Musgraves"
     },
     correctAnswer:"a"
   },
@@ -86,7 +86,7 @@ var myQuestions=[
       c:" Uptown Funk",
       d:" Thinking Out Loud"
     },
-    correctAnswer:"b"
+    correctAnswer:"c"
   },
   {
     question: "Who won Best New Artist in 2011?",
