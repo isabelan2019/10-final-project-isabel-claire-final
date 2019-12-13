@@ -1,0 +1,29 @@
+/*NOMINATIONS PAGE -- gold: #a28848 */
+#nomTitle {
+  color: rgba(250,250,250,0.9);
+  text-align: center;
+  margin-top: 115px;
+}
+fig {
+  margin: 10px 10px;
+}
+.awardT {
+  color: white;
+  margin-left: 10px;
+}
+figcaption {
+  color: white;
+}
+.pics {
+  display: flex;
+  width: 100%;
+  overflow:scroll;
+}
+.pics img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.pics img:hover {
+  opacity: 0.5;
+}
