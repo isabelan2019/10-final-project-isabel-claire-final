@@ -1,21 +1,21 @@
-//for the modal box (from W3)
+//for the modal box (from W3 and image gallery assignment code)
 // Get the modal
 var modal = document.getElementById("myModal");
 // Get the button that opens the modal
 var btn = document.getElementById('test');
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn.addEventListener('click',open);
+span.addEventListener('click',close);
 
 function open(){
   modal.style.display="block";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+function close() {
   modal.style.display = "none";
 }
 
