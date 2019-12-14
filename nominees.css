@@ -1,9 +1,13 @@
 /*NOMINATIONS PAGE -- gold: #a28848 */
 #nomTitle {
-  color: rgba(255,255,255,0.9);
+  color: white;
   text-align: center;
   margin-top: 115px;
 }
+.spotify {
+  text-align: center;
+}
+
 fig {
   margin: 10px 10px;
 }
