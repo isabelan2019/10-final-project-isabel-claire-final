@@ -23,12 +23,12 @@ figcaption {
   width: 100%;
   overflow:scroll;
 }
-.pics img {
+.pics input {
   width: 200px;
   height: 200px;
   object-fit: cover;
 }
-.pics img:hover {
+.pics input:hover {
   opacity: 0.5;
 }
 /*modal box styling*/

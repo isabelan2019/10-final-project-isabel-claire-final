@@ -3,19 +3,27 @@
 // Get the modal
 var modal = document.getElementById("myModal");
 // Get the button that opens the modal
-var btn = document.getElementById('test');
+var pictures = document.getElementsByClassName("pic");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
+//
 // When the user clicks on the button, open the modal
-btn.addEventListener('click',open);
+for (var i=0;i<pictures.length;i++){
+  pictures[i].addEventListener('click',open);
+}
+
 span.addEventListener('click',close);
 
+// function open(i){
+//   var modalCollection = document.getElementsByClassName("modal");
+//   console.log(modalCollection);
+//   modalCollection[i].style.display="block";
+// }
 function open(){
   modal.style.display="block";
 }
-
 // When the user clicks on <span> (x), close the modal
+
 function close() {
   modal.style.display = "none";
 }
