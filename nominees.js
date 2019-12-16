@@ -53,6 +53,21 @@ window.onclick = function(event) {
 // request.send();
 //Access-Control-Allow-Origin: *;
 
+//testing ticketMaster
+
+var xhttp1= new XMLHttpRequest();
+xhttp1.onreadystatechange = function(){
+  if (this.readyState==4 && this.status==200){
+    var eventInfo = JSON.parse(this.responseText);
+    console.log(eventInfo);
+  }
+  else if(this.readyState==4){
+    console.log(this.responseText);
+  }
+}
+xhttp1.open("GET", "https://app.ticketmaster.com/discovery/v2/events.json?attractionId=K8vZ9174Za7&countryCode=US&apikey=syjSxSCRp2dXGxmBOOcL7NvBs0LyiRhS");
+xhttp1.send();
+
 var signIn = document.getElementById('spotifyL');
 signIn.addEventListener('click', signiN);
 function signiN() {
