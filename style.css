@@ -68,7 +68,7 @@ body{
 }
 #title{
   position:relative;
-  top:20px;
+  top:10px;
 }
 #countdown{
   position:relative;
@@ -76,7 +76,7 @@ body{
 }
 #stream{
   position:relative;
-  top:550px;
+  top:400px;
 }
 
 button{

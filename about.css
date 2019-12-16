@@ -4,6 +4,7 @@ body{
 }
 p{
   line-height: 1.4em;
+  font-weight:lighter;
 }
 #thisYear {
   margin-left: 200px;

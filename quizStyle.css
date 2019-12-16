@@ -64,7 +64,6 @@ h1{
 .quiz-container{
   position: relative;
   height: 200px;
-  margin-top: 40px;
 }
 .buttons{
   display: flex;
@@ -76,4 +75,9 @@ h1{
 }
 #next{
   justify-content:flex-end;
+}
+p{
+  text-align: center;
+  font-weight:lighter;
+  margin:0px;
 }
