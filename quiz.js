@@ -59,7 +59,7 @@ var myQuestions=[
     correctAnswer:"c"
   },
   {
-    question: "Who is the only artist who has won Record, Album, and Song of the Year all in one night on two separate occasions?",
+    question: "_______ has won Record, Album, and Song of the Year all in one night on two separate occasions.",
     answers: {
       a:" Michael Jackson",
       b:" Paul Simon",
@@ -69,7 +69,7 @@ var myQuestions=[
     correctAnswer:"d"
   },
   {
-    question: "Who had the most amount of nominations at the 61st Annual Grammy Awards?",
+    question: "Who had the most amount of nominations at the 61st Annual Grammy Awards (in 2019)?",
     answers: {
       a:" Kendrick Lamar",
       b:" Childish Gambino",

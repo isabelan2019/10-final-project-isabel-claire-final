@@ -1,14 +1,19 @@
 /*ABOUT PAGE -- gold: #a28848 */
+p{
+  line-height: 1.4em;
+}
 .about {
   color: #932192;
   text-align: center;
   display: flex;
 }
 #grammyVoting {
-  width: 50%;
+  width: 100%;
 }
+
 .one {
   flex: 1;
+  margin-left: 10px;
 }
 .two {
   flex:1;
@@ -16,11 +21,18 @@
 .two * {
   box-sizing: border-box;
 }
+h2 {
+  margin: 10px 0px 0px 0px;
+}
+.timeline p {
+  margin: 10px 10px 0px 0px;
+}
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 /* The actual timeline (the vertical ruler) */
 .timeline::after {

@@ -17,6 +17,7 @@ fig {
 }
 figcaption {
   color: white;
+  text-align: center;
 }
 .pics {
   display: flex;
@@ -30,6 +31,12 @@ figcaption {
 }
 .pics input:hover {
   opacity: 0.5;
+}
+#artist input {
+  border-radius: 50%;
+}
+#artist figcaption {
+  text-align: center;
 }
 /*modal box styling*/
 /* The Modal (background) */
