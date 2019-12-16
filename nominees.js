@@ -35,6 +35,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+//Access-Control-Allow-Origin: *;
 
 var signIn = document.getElementById('spotifyL');
 signIn.addEventListener('click', signiN);
@@ -49,9 +50,11 @@ xhttp.onreadystatechange = function() {
   else if (this.readyState==4) {
     console.log(this.responseText);
   }
-
 };
-xhttp.open("GET", 'https://accounts.spotify.com/authorize?client_id=ed2250f6a28a40f8b843a41d44cbe116&response_type=code&redirect_uri=https://wustlcse204.github.io/10-final-project-isabel-claire-final/nominees.html');
+xhttp.open("GET", 'https://accounts.spotify.com/authorize');
+xhttp.setRequestHeader('client_id','ed2250f6a28a40f8b843a41d44cbe116');
+xhttp.setRequestHeader('response_type','code');
+xhttp.setRequestHeader('redirect_uri','https://wustlcse204.github.io/10-final-project-isabel-claire-final/nominees.html')
 xhttp.send();
 };
 
@@ -118,6 +121,7 @@ xhr.send(data);
  // }).listen('https://accounts.spotify.com/authorize?client_id=ed2250f6a28a40f8b843a41d44cbe116&scopes=user-read-email&response_type=code&redirect_uri=https%3A%2F%2Fwustlcse204.github.io%2F10-final-project-isabel-claire-final%2F%0A');
 
 
+
 var authCode ='AQDW5D5El0bcJ51FwJVR8I4uTWDOIdDuFjbr5wv1N4PWOSPMPF37BMCMcm-Crzgi8Fyos6-bYSTP_xK85kY4l-80mSBEJWKz7Wbk4XGr0uNshApB5Yoz6ZT7gPLNmFyBe1B8UrvWBI_531uGdWBMiovzO2l5khG9yeVQ-6rWPhtyHjYeJ4SDZBWVAqXatoL8c5AVBMQVyB4c6BxyXSYpCYrjDP-UjauPCbduMsWN_EclDOaP2ktFWdg';
 var accessToken = 'BQBkI0Lu7Cn0CekJZX5_evqMVwrOgNo-nBCrppiTCFJ38_OL1_xe4C12-CzncPes9_HwWaV5K573awnGEyyNN76m0oX7KgK7FtyqNh6awJCzSopiTGq8NTrUMv_gLet1UUxG9Qch8du0o4FzeZPS';
 var client_id = 'ed2250f6a28a40f8b843a41d44cbe116'; // Your client id
@@ -134,7 +138,12 @@ var authOptions = {
   },
   json: true
 };
-// var request = require('request');
+
+// var request;
+// define(function (require) {
+//     request = require('request');
+// });
+//
 // request.post(authOptions, function(error, response, body) {
 //   if (!error && response.statusCode === 200) {
 //
