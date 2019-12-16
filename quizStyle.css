@@ -69,6 +69,7 @@ h1{
 .buttons{
   display: flex;
   flex-direction: row;
+  margin-top:50px;
 }
 #previous{
   justify-content: flex-start;

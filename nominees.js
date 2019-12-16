@@ -35,6 +35,22 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+//grab lyrics
+//testing lyrics api
+// var request = new XMLHttpRequest();
+//
+// request.open('GET', 'https://api.lyrics.ovh/v1/Billie Eilish/bad guy');
+//
+// request.onreadystatechange = function () {
+//   if (this.readyState === 4) {
+//     console.log('Status:', this.status);
+//     console.log('Headers:', this.getAllResponseHeaders());
+//     console.log('Body:', this.responseText);
+//   }
+// };
+//
+// request.send();
 //Access-Control-Allow-Origin: *;
 
 var signIn = document.getElementById('spotifyL');
