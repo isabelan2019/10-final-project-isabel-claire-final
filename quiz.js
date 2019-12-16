@@ -126,8 +126,10 @@ function renderQuiz(questions,quizContainer,resultsContainer,submitButton){
         );
       }
       output.push(
+        '<div class="slide">'+
         '<div class="question">' + questions[i].question + '</div>'
         + '<div class="answers">' + answers.join('') + '</div>'
+        +'</div>'
       );
     }
     quizContainer.innerHTML=output.join('');
@@ -161,3 +163,42 @@ function renderQuiz(questions,quizContainer,resultsContainer,submitButton){
   }
 }
 renderQuiz(myQuestions,quizContainer,resultsContainer,submitButton);
+
+//transition from sitepoint
+var previousButton = document.getElementById("previous");
+var nextButton = document.getElementById("next");
+var slides = document.querySelectorAll(".slide");
+
+var currentSlide=0;
+
+function showSlide(n) {
+  slides[currentSlide].classList.remove('active-slide');
+  slides[n].classList.add('active-slide');
+  currentSlide = n;
+  if(currentSlide===0){
+    previousButton.style.display = 'none';
+  }
+  else{
+    previousButton.style.display = 'inline-block';
+  }
+  if(currentSlide===slides.length-1){
+    nextButton.style.display = 'none';
+    submitButton.style.display = 'inline-block';
+  }
+  else{
+    nextButton.style.display = 'inline-block';
+    submitButton.style.display = 'none';
+  }
+}
+showSlide(0);
+
+function showNextSlide() {
+  showSlide(currentSlide + 1);
+}
+
+function showPreviousSlide() {
+  showSlide(currentSlide - 1);
+}
+
+previousButton.addEventListener("click", showPreviousSlide);
+nextButton.addEventListener("click", showNextSlide);
