@@ -56,24 +56,24 @@ xhttp.send();
 };
 
 
-var request = require('request');
-var albumURL = 'https://api.spotify.com/v1/albums/{2fYhqwDWXjbpjaIJPEfKFw}';
-var token = 'Bearer ';
-request({url:albumURL, headers:{'Authorization':token}}, function(err, res){
-  if (res){
-    var album = JSON.parse(res.body);
-    get(album);
-  }
-  else {
-    console.log('did not work');
-  }
-})
-function get(){
-  var works = document.getElementsByClassName('modal-content')[0];
-  var test = document.createElement('P');
-  test.innerHTML='it works';
-  works.appendChild(test);
-}
+// var request = require('request');
+// var albumURL = 'https://api.spotify.com/v1/albums/{2fYhqwDWXjbpjaIJPEfKFw}';
+// var token = 'Bearer ';
+// request({url:albumURL, headers:{'Authorization':token}}, function(err, res){
+//   if (res){
+//     var album = JSON.parse(res.body);
+//     get(album);
+//   }
+//   else {
+//     console.log('did not work');
+//   }
+// })
+// function get(){
+//   var works = document.getElementsByClassName('modal-content')[0];
+//   var test = document.createElement('P');
+//   test.innerHTML='it works';
+//   works.appendChild(test);
+// }
 
 
 var add = document.getElementById("add");
