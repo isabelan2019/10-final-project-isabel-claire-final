@@ -1,4 +1,5 @@
 
+
 //for the modal box (from W3 and image gallery assignment code)
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -35,34 +36,63 @@ window.onclick = function(event) {
   }
 }
 
+var signIn = document.getElementById('spotifyL');
+signIn.addEventListener('click', signiN);
+function signiN() {
+  console.log('working');
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var todos = JSON.parse(this.responseText);
+    console.log(todos);
+  }
+  else if (this.readyState==4) {
+    console.log(this.responseText);
+  }
+
+};
+xhttp.open("GET", 'https://accounts.spotify.com/authorize?client_id=ed2250f6a28a40f8b843a41d44cbe116&response_type=code&redirect_uri=https://wustlcse204.github.io/10-final-project-isabel-claire-final/nominees.html');
+xhttp.send();
+};
+
+
+var request = require('request');
+var albumURL = 'https://api.spotify.com/v1/albums/{2fYhqwDWXjbpjaIJPEfKFw}';
+var token = 'Bearer ';
+request({url:albumURL, headers:{'Authorization':token}}, function(err, res){
+  if (res){
+    var album = JSON.parse(res.body);
+    get(album);
+  }
+  else {
+    console.log('did not work');
+  }
+})
+function get(){
+  var works = document.getElementsByClassName('modal-content')[0];
+  var test = document.createElement('P');
+  test.innerHTML='it works';
+  works.appendChild(test);
+}
+
+
 var add = document.getElementById("add");
 add.addEventListener('click', addFunction);
 function addFunction() {
 
 var data = null;
-
 var xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
-
 xhr.addEventListener("readystatechange", function () {
 	if (this.readyState === this.DONE) {
 		console.log(this.responseText);
 	}
 });
-
 xhr.open("PUT", "https://api.spotify.com/v1/me/tracks");
 xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded");
-
 xhr.send(data);
 
 }
-
-
-
-
-
-
-
 
 
 /**
@@ -104,21 +134,21 @@ var authOptions = {
   },
   json: true
 };
-var request = require('request');
-request.post(authOptions, function(error, response, body) {
-  if (!error && response.statusCode === 200) {
-
-    // use the access token to access the Spotify Web API
-    var token = 'BQBkI0Lu7Cn0CekJZX5_evqMVwrOgNo-nBCrppiTCFJ38_OL1_xe4C12-CzncPes9_HwWaV5K573awnGEyyNN76m0oX7KgK7FtyqNh6awJCzSopiTGq8NTrUMv_gLet1UUxG9Qch8du0o4FzeZPS';
-    var options = {
-      url: 'https://api.spotify.com/v1/users/jmperezperez',
-      headers: {
-        'Authorization': 'Bearer ' + token
-      },
-      json: true
-    };
-    request.get(options, function(error, response, body) {
-      console.log(body);
-    });
-  }
-});
+// var request = require('request');
+// request.post(authOptions, function(error, response, body) {
+//   if (!error && response.statusCode === 200) {
+//
+//     // use the access token to access the Spotify Web API
+//     var token = 'BQBkI0Lu7Cn0CekJZX5_evqMVwrOgNo-nBCrppiTCFJ38_OL1_xe4C12-CzncPes9_HwWaV5K573awnGEyyNN76m0oX7KgK7FtyqNh6awJCzSopiTGq8NTrUMv_gLet1UUxG9Qch8du0o4FzeZPS';
+//     var options = {
+//       url: 'https://api.spotify.com/v1/users/jmperezperez',
+//       headers: {
+//         'Authorization': 'Bearer ' + token
+//       },
+//       json: true
+//     };
+//     request.get(options, function(error, response, body) {
+//       console.log(body);
+//     });
+//   }
+// });

@@ -3,6 +3,7 @@
 <head>
   <link href="style.css" type="text/css" rel="stylesheet">
   <link rel="stylesheet" type="text/css"href="nominees.css">
+  <script data-main="nominees" src="require.js"></script>
   <title>Grammy 2020 Nominees</title>
 </head>
 <body>
@@ -16,8 +17,7 @@
   <div class="containerOne nominations">
     <h1 id="nomTitle">Grammy 2020 Nominees - General Field</h1>
     <form class="spotify"> <!--add comment-->
-      <button onclick="window.location.href = 'https://accounts.spotify.com/authorize?client_id=ed2250f6a28a40f8b843a41d44cbe116&scopes=user-read-email&response_type=code&redirect_uri=https://wustlcse204.github.io/10-final-project-isabel-claire-final/nominees.html'"
-      type="button" id="spotifyL">Sign in to add music on Spotify</button>
+      <button type="button" id="spotifyL">Sign in to add music on Spotify</button>
     </form>
     <div class="awardT" id="album">
       <h2>Album of the Year</h2>
@@ -176,7 +176,7 @@
   <!-- The Modal -->
   <div id="myModal" data-modal="0" class="modal">
     <!-- Modal content -->
-    <div  class="modal-content">
+    <div class="modal-content">
       <span class="close">&times;</span>
       <p>Some text in the Modal..</p>
       <input type="button" value="add" id="add">
