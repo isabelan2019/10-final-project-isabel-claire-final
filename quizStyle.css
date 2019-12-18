@@ -47,7 +47,7 @@ h1{
   margin:20px 0px;
 }
 
-/* one slide only  */
+/* one slide only (css help from sitepoint website)  */
 .slide{
   position: absolute;
   left: 0px;
