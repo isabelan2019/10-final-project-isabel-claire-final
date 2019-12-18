@@ -80,3 +80,11 @@ figcaption {
 .modal-content{
   overflow: scroll;
 }
+
+#nominees-text{
+  color:white;
+  text-align:center;
+  width:30%;
+  margin-left: auto;
+  margin-right: auto;
+}
