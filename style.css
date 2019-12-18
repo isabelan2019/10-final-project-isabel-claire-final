@@ -71,12 +71,16 @@ body{
   top:10px;
 }
 #countdown{
-  position:relative;
-  top:500px;
+  position:absolute;
+  top:725px;
+  left:425px;
+
 }
 #stream{
-  position:relative;
-  top:480px;
+  position:absolute;
+  left:625px;
+  right: auto;
+  top:650px;
 }
 
 button{
