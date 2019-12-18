@@ -20,11 +20,38 @@ span.addEventListener('click',close);
 //   console.log(modalCollection);
 //   modalCollection[i].style.display="block";
 // }
+var attractionIds=["K8vZ917oaP0","G5diZfkn0B"];
+var indexToId=0;
 function open(){
   modal.style.display="block";
+  indexToId=this.getAttribute("data-index");
+  console.log(indexToId);
+  showEvents(indexToId);
+  console.log(attractionIds[indexToId]);
+  test(indexToId);
 }
-// When the user clicks on <span> (x), close the modal
 
+function test(){
+  console.log(indexToId);
+  if (indexToId==0) {
+    console.log(indexToId);
+    var ariG = document.createElement('p');
+    var ariText=document.createTextNode("arianna");
+    ariG.appendChild(ariText);
+    document.getElementById('tmEvent').appendChild(ariG);
+  }
+  else {
+    console.log(indexToId);
+    var other = document.createElement('p');
+    var otherText=document.createTextNode("other");
+    other.appendChild(otherText);
+    document.getElementById('tmEvent').appendChild(other);
+  }
+}
+
+
+
+// When the user clicks on <span> (x), close the modal
 function close() {
   modal.style.display = "none";
 }
@@ -57,11 +84,15 @@ window.onclick = function(event) {
 
   //need to replace the attractionId or loop through
   var attractionId="K8vZ917oaP0";
+  var anotherAttId='pLOeuGq2JL05uEGrZG7DuGWu6sh2OnMz';
+
+  //im thinking each artist gets an attraction ID, associate that with each data index picture - claire
 
   //testing by calling the function
-  showEvents(attractionId);
+  // showEvents(attractionIds);
 
   function showEvents(attractionId){
+
   var xhttp= new XMLHttpRequest();
   xhttp.onreadystatechange = function(){
     if (this.readyState==4 && this.status==200){
@@ -84,8 +115,11 @@ var name;
 var link;
 for (var i=0;i<events.length;i++){
     //create new concert element
+
+
     var concert = document.createElement("div");
     concert.className="concert";
+
     //find concert name
     var name=events[i].name;
     var concertNameText=document.createTextNode(name+" ");
@@ -121,7 +155,7 @@ for (var i=0;i<events.length;i++){
     buyBtn.setAttribute("id","buy");
     var url = events[i].url;
     var popoutLink="window.location.href='"+url+";'";
-    buyBtn.setAttribute("onclick",popoutLink);
+    buyBtn.setAttribute("onclick", popoutLink);
     //attach to html
     document.getElementById('tmEvent').appendChild(concert);
     document.getElementById('tmEvent').appendChild(buyBtn);
