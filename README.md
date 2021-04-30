@@ -1,6 +1,7 @@
-# CSE330 Final Project
+# Web Development Final Project
 
-Created an inventory and checkout system for SWAP (https://swapstl.org/team) 
+Designed website for Grammy's 2020 featuring artist nominations, Grammy's history, and music trivia.
+
 
 Contributors
 - Isabel An
